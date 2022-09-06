@@ -1,0 +1,97 @@
+.next{
+    text-align: end;
+}
+.button {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #1b47d3;
+    background-image: linear-gradient(179deg, #1b47d3, #414ef0);
+    box-shadow: 0px 0px 4px 0px #000000;
+    margin-bottom: 2%;
+    margin-top: 8%;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    transition: .5s;
+    padding: 6px 0;
+}
+.button:hover{
+    background:#06227f;
+    color: white;
+}
+.form-div form{
+    width: 80%;
+}
+.page{
+    display: none;
+}
+.active{
+    display: block;
+}
+.Progressbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.Progressbar::before, .progress{
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 6px;
+    width: 100%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 5px #b6b6b6;
+    counter-reset: step;
+    z-index: -1;
+}
+.progress {
+    background-color: #1b47d3;
+    width: 0%;
+    transition: 1s;
+    box-shadow: inset 0px 0px 5px #b6b6b6;
+}
+
+.Progress-step {
+    width: 33px;
+    height: 33px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px 1px #878787;
+    color: black;
+}
+.Progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+    font-size: 18px;
+    font-weight: 500;
+}
+.progress-step-active{
+    background-color: #1b47d3;
+    color: white;
+}
+
+.Progress-step-active{
+    background-color: #1b47d3;
+    color: white;
+
+}
+.page input{
+    border: 0px solid #0c0f77;
+    border-width: 0px 0px 2px 0px;
+    color: #0c0f77;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 3px 1px 6px;
+    margin-bottom: 10px;
+}
+.page input:focus-visible {
+    outline: none;
+}
+label{
+    font-weight: 500;
+    color: #0b0d4e;
+}
